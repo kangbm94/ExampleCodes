@@ -1,5 +1,0 @@
-
-void LambdaExp(){
-	auto k = [](double a,double b){return a+b;};
-	cout<<k(2.,3.)<<endl;
-}
