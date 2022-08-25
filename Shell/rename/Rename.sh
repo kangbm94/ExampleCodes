@@ -15,11 +15,12 @@ afs=(${af//\*/ })
 af1=${afs[0]}
 af1=${af1%\\}
 af2=${afs[1]}
-
-for before in $arg1*$arg2
+for before in $bf1*$bf2
 do
 	after=${before#$bf1}
 	after=${after%$bf2}
 	after=$af1$after$af2
-	mv "$before" "$after"
+	echo $before
+	echo $after
+#	mv "$before" "$after"
 done
