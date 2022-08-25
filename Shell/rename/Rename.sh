@@ -1,6 +1,13 @@
 #Usage:
 #source Rename.sh 'foo1\*foo2' 'faa1\*faa2'
 #This will rename files foo1*foo2 ->faa1*faa2, where * can be any strings.
+if [ $# -ne 2 ] 
+then
+echo 'Usage:'
+echo source Rename.sh \'foo1\\\*foo2\' \'faa1\\\*faa2\'
+echo 'This will rename files foo1*foo2 ->faa1*faa2, where * can be any strings.'
+	return 
+fi
 
 
 
